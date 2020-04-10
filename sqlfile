@@ -1,0 +1,24 @@
+drop table sample_user;
+create table sample_user
+(
+    id integer  PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    fname varchar(20) NOT NULL,
+    lname varchar(20) NOT NULL,
+    address varchar(120) NOT NULL,
+    gender varchar(7) NOT NULL,
+    mobile BIGINT(10) NOT NULL,
+    email varchar(50) NOT NULL,
+    username varchar(50) NOT NULL,
+    password varchar(150) NOT NULL
+);
+desc sample_user;
+select * from sample_user;
+
+
+INSERT INTO sample_user(fname,lname,address,gender,mobile,email,username,password) values(%s,%s,%s,%s,%s,%s,%s,%s)
+['first_name','last_name ','address','gender','mobile','email','username','password']
+
+
+INSERT INTO sample_user(fname,lname,address,gender,mobile,email,username,password) values('naynesh','rathod','pashte','male','8550949497','nayneshrathod@gmail.com','nayneshrathod','MyMom@000');
+
+INSERT INTO sample_user(fname,lname,address,gender,mobile,email,username,password) values()

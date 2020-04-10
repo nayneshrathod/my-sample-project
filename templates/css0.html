@@ -1,0 +1,23 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+<h1>Welcome to Home</h1>
+<ul>
+    <li>apple</li>
+    <li>Mango</li>
+    <li>Orange</li>
+</ul>
+<hr>
+{{frut}}
+<hr>    
+<ul>
+    {% for fr in frut %}
+    <li>{{fr}}</li>
+
+    {% endfor %}
+    {% if 'Mango' in frut %}
+    <p>Mango Is Avilable</p>
+    {% else %}
+    <p>Mango is NOt Avilabl</p>
+    {% endif %}
+</ul>
+{% endblock %}

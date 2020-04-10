@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="row  ">
+    <div class="col-md-12">
+   {% if  not users  %}
+        <img alt="placeholder" class="img-fluid col-md-12 z-depth-0"
+             src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg"/>
+
+        {% else %}
+        <table class="table    table-responsive">
+            <thead class="table-dark">
+            <tr>
+                <td>ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Address</td>
+                <td>Gender</td>
+                <td>Mobile</td>
+                <td>E-mail</td>
+                <td>Username</td>
+                <td>Password</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for u in users %}
+            <tr>
+                <td>{{u.id}}</td>
+                <td>{{u.fname}}</td>
+                <td>{{u.lname}}</td>
+                <td>{{u.address}}</td>
+                <td>{{u.gender}}</td>
+                <td>{{u.mobile}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.password}}</td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+        {% endif %}
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+<!--    <div class="col-xs-12 col-sm-8 col-md-4 ">-->
+
+<!--        <ul>-->
+<!--            <li>apple</li>-->
+<!--            <li>Mango</li>-->
+<!--            <li>Orange</li>-->
+<!--        </ul>-->
+<!--        <hr>-->
+<!--        {{frut}}-->
+<!--        <hr>-->
+<!--        <ul>-->
+<!--            {% for fr in frut %}-->
+<!--            <li>{{fr}}</li>-->
+
+<!--            {% endfor %}-->
+<!--            {% if 'Mango' in frut %}-->
+<!--            <p>Mango Is Avilable</p>-->
+<!--            {% else %}-->
+<!--            <p>Mango is NOt Avilabl</p>-->
+
+<!--            {% endif %}-->
+
+<!--        </ul>-->
+
+<!--    </div>-->

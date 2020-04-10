@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href={{url_for('static', filename="css/bootstrap.min.css" )}} rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href={{url_for('static', filename="css/mdb.min.css" )}} rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href={{url_for('static', filename="css/style.css" )}} rel="stylesheet">
+</head>
+<body>
+<div class="container   my-4 py-0 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class=" text-lg-left dark-grey-text">
+
+        <!--Grid row-->
+        <div class="row  ">
+
+            <!--Grid column-->
+            <div class=" col-md-12     py-3 ">
+                {% block body %}
+
+                <!-- <h3 class="font-weight-bold mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+
+                 <div class="view overlay z-depth-1-half">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(2).jpg" class="img-fluid"
+                    alt="">
+                  <a href="">
+                    <div class="mask rgba-white-light"></div>
+                  </a>
+                </div> -->
+                {% endblock %}
+
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <!-- <div id="mdb-lightbox-ui"></div> -->
+        <!-- <div class="mdb-lightbox"> -->
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" alt="placeholder"
+                     class="img-fluid z-depth-1">
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" alt="placeholder"
+                     class="img-fluid z-depth-2"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" alt="placeholder"
+                     class="img-fluid z-depth-3"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" alt="placeholder"
+                     class="img-fluid  z-depth-4"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" alt="placeholder"
+                     class="img-fluid z-depth-5"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" alt="placeholder"
+                     class="img-fluid z-depth-3"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" alt="placeholder"
+                     class="img-fluid z-depth-4"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" alt="placeholder"
+                     class="img-fluid z-depth-5"/>
+            </a>
+        </figure>
+        <figure class="col-md-4">
+            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
+                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" alt="placeholder"
+                     class="img-fluid z-depth-2"/>
+            </a>
+        </figure>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <div style="height: 100vh">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="view overlay zoom">
+                    <img src={{url_for('static',filename="Image/main.jpeg" )}} class="img-fluid z-depth-1" alt="1">
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="view overlay zoom">
+                    <img src={{url_for('static', filename="Image/lakud.jpg" )}} class="img-fluid z-depth-1" alt="1">
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="view overlay zoom">
+                    <img src={{url_for('static', filename="Image/hatti.jpg" )}} class="img-fluid z-depth-1" alt="1">
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="view overlay zoom">
+                    <img src={{url_for('static', filename="Image/duskad.jpg" )}} class="img-fluid z-depth-1" alt="1">
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="view overlay zoom">
+                    <img src={{url_for('static', filename="Image/pani.jpg" )}} class="img-fluid z-depth-1 md-5" alt="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src={{url_for('static', filename="js/jquery-3.4.1.min.js" )}}></script>
+    <script type="text/javascript">
+         $(function () {
+         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+         });
+
+
+
+    </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src={{url_for('static', filename="js/popper.min.js" )}}></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src={{url_for('static', filename="js/bootstrap.min.js" )}}></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src={{url_for('static', filename="js/mdb.min.js" )}}></script>
+</body>
+</html>
